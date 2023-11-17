@@ -47,8 +47,7 @@ dart pub add flutter_stripe
 This plugin requires several changes to be able to work on Android devices. Please make sure you follow all these steps:
 
 1. Use Android 5.0 (API level 21) and above
-2. Use Kotlin version 1.5.0 and above: [example](https://github.com/flutter-stripe/flutter_stripe/blob/79b201a2e9b827196d6a97bb41e1d0e526632a5a/example/android/
-.gradle#L2)
+2. Use Kotlin version 1.5.0 and above: [example](https://github.com/flutter-stripe/flutter_stripe/blob/79b201a2e9b827196d6a97bb41e1d0e526632a5a/example/android/.gradle#L2)
 3. Using a descendant of `Theme.AppCompat` for your activity: [example](https://github.com/flutter-stripe/flutter_stripe/blob/main/example/android/app/src/main/res/values/styles.xml#L15), [example night theme](https://github.com/flutter-stripe/flutter_stripe/blob/main/example/android/app/src/main/res/values-night/styles.xml#L16)
 4. Using an up-to-date Android gradle build tools version: [example](https://github.com/flutter-stripe/flutter_stripe/blob/main/example/android/build.gradle#L9) and an up-to-date gradle version accordingly: [example](https://github.com/flutter-stripe/flutter_stripe/blob/main/example/android/gradle/wrapper/gradle-wrapper.properties#L6) 
 5. Using `FlutterFragmentActivity` instead of `FlutterActivity` in `MainActivity.kt`: [example](https://github.com/flutter-stripe/flutter_stripe/blob/79b201a2e9b827196d6a97bb41e1d0e526632a5a/example/android/app/src/main/kotlin/com/flutter/stripe/example/MainActivity.kt#L6)
@@ -92,6 +91,8 @@ Payment sheet | Easy          | Our recommended way of handling payments. It off
 Cardfield     | Medium        | Single line cardfield. Offers more flexibility but has less built-in functionality.                              | [docs](https://docs.page/flutter-stripe/flutter_stripe/card_field)   |
 Card form     | Medium        | Similar as the cardfield but the entry fields are spread across multi lines                                      | [docs](https://docs.page/flutter-stripe/flutter_stripe/card_field)   |
 
+### Mobile elements [BETA]
+We also support the customer sheet mobile element. Check out the [docs](https://docs.page/flutter-stripe/flutter_stripe/customer_sheet) to learn more on how to set it up.
 
 ### Financial connections
 We also support Financial connections in our latest sdk. Check out the [docs](https://docs.page/flutter-stripe/flutter_stripe/financial_connections) to learn more on how to set it up.
